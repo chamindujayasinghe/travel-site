@@ -5,6 +5,8 @@ from the Sigiriya rock fortress and the tea hills of Ella to leopard safaris in 
 
 Built for the **Full-Stack Developer Intern (Frontend and Mobile)** technical assessment.
 
+**Live demo:** https://travel-site-two-mu.vercel.app
+
 ## Features
 
 ### Home (`/`)
@@ -76,9 +78,9 @@ npm run preview   # preview the production build
 | State | How to see it |
 |---|---|
 | Loading | Open any page — skeletons show for ~0.6s while the simulated API responds |
-| Error | Add `?fail=1` to the URL, e.g. `/destinations?fail=1` or `/destinations/ella?fail=1`, then click **Try again** to recover |
+| Error | Add `?fail=1` to the URL, e.g. [`/destinations?fail=1`](https://travel-site-two-mu.vercel.app/destinations?fail=1) or `/destinations/ella?fail=1`, then click **Try again** to recover |
 | Empty | On Explore, search for something like `xyz`, then click **Clear filters** |
-| Not found | Open `/destinations/atlantis` |
+| Not found | Open [`/destinations/atlantis`](https://travel-site-two-mu.vercel.app/destinations/atlantis) |
 | Form validation | On any destination, click **Book now** with the form empty |
 
 ## Project structure
