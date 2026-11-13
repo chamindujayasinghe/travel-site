@@ -56,7 +56,10 @@ function Navbar() {
 
       {/* Mobile menu panel */}
       {menuOpen && (
-        <ul id="mobile-menu" className="flex flex-col gap-1 border-t border-sand-200 px-4 py-3 md:hidden">
+        <ul
+          id="mobile-menu"
+          className="absolute inset-x-0 top-full flex flex-col gap-1 border-y border-sand-200 bg-sand-50 px-4 py-3 shadow-lg md:hidden"
+        >
           {navLinks.map((link) => (
             <li key={link.to}>
               <NavLink
