@@ -7,6 +7,7 @@ import WhyUs from '../components/home/WhyUs'
 function Home() {
   return (
     <>
+      <title>Ceylon Trails · Discover Sri Lanka</title>
       <Hero />
       <FeaturedDestinations />
       <CategoryGrid />

@@ -80,7 +80,7 @@ function FilterPanel({
           <label htmlFor={priceId} className="text-sm font-semibold text-teal-900">
             Max price
           </label>
-          <span className="text-sm font-semibold text-coral-600">
+          <span className="text-sm font-semibold text-coral-700">
             {filters.maxPrice === null ? 'Any price' : `Up to ${formatPrice(filters.maxPrice)}`}
           </span>
         </div>
@@ -97,7 +97,7 @@ function FilterPanel({
           }}
           className="mt-3 w-full accent-coral-500"
         />
-        <div className="mt-1 flex justify-between text-xs text-teal-900/60">
+        <div className="mt-1 flex justify-between text-xs text-teal-900/70">
           <span>{formatPrice(PRICE_MIN)}</span>
           <span>{formatPrice(PRICE_MAX)}+</span>
         </div>

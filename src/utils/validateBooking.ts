@@ -1,3 +1,5 @@
+import { isValidEmail } from './validation'
+
 export interface BookingValues {
   name: string
   email: string
@@ -10,8 +12,6 @@ export type BookingErrors = Partial<Record<keyof BookingValues, string>>
 export const MIN_TRAVELLERS = 1
 export const MAX_TRAVELLERS = 10
 
-const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-
 /** Returns an error message for every invalid field. An empty object means the form is valid. */
 export function validateBooking(values: BookingValues): BookingErrors {
   const errors: BookingErrors = {}
@@ -22,7 +22,7 @@ export function validateBooking(values: BookingValues): BookingErrors {
 
   if (!values.email.trim()) {
     errors.email = 'Please enter your email address.'
-  } else if (!EMAIL_PATTERN.test(values.email.trim())) {
+  } else if (!isValidEmail(values.email)) {
     errors.email = 'Please enter a valid email, e.g. name@example.com.'
   }
 

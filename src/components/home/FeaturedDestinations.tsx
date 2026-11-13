@@ -14,12 +14,12 @@ function FeaturedDestinations() {
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
       <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="text-sm font-semibold tracking-widest text-coral-600 uppercase">Featured</p>
+          <p className="text-sm font-semibold tracking-widest text-coral-700 uppercase">Featured</p>
           <h2 className="mt-2 text-3xl font-bold text-teal-900 sm:text-4xl">Popular right now</h2>
         </div>
         <Link
           to="/destinations"
-          className="inline-flex items-center gap-1 font-semibold text-teal-700 hover:text-coral-600"
+          className="inline-flex items-center gap-1 font-semibold text-teal-700 hover:text-coral-700"
         >
           View all destinations <ArrowRight className="size-4" aria-hidden="true" />
         </Link>

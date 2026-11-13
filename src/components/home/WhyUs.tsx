@@ -27,7 +27,7 @@ function WhyUs() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
       <div className="max-w-2xl">
-        <p className="text-sm font-semibold tracking-widest text-coral-600 uppercase">Why Ceylon Trails</p>
+        <p className="text-sm font-semibold tracking-widest text-coral-700 uppercase">Why Ceylon Trails</p>
         <h2 className="mt-2 text-3xl font-bold text-teal-900 sm:text-4xl">Travel with people who know the island</h2>
       </div>
 

@@ -42,14 +42,14 @@ function SearchBar({
           type="button"
           onClick={() => onChange('')}
           aria-label="Clear search"
-          className="rounded-full p-1.5 text-teal-900/60 hover:bg-sand-100 hover:text-teal-900"
+          className="rounded-full p-1.5 text-teal-900/70 hover:bg-sand-100 hover:text-teal-900"
         >
           <X className="size-4" />
         </button>
       )}
       <button
         type="submit"
-        className="rounded-xl bg-coral-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-coral-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral-500"
+        className="rounded-xl bg-coral-500 px-5 py-2.5 text-sm font-semibold text-teal-950 transition-colors hover:bg-coral-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral-500"
       >
         Search
       </button>

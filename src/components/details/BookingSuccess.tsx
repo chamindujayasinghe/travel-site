@@ -46,7 +46,7 @@ function BookingSuccess({ reference, destinationName, values, endDate, total, on
         <button
           type="button"
           onClick={onReset}
-          className="rounded-xl bg-coral-500 py-3 font-semibold text-white transition-colors hover:bg-coral-600"
+          className="rounded-xl bg-coral-500 py-3 font-semibold text-teal-950 transition-colors hover:bg-coral-400"
         >
           Book another trip
         </button>

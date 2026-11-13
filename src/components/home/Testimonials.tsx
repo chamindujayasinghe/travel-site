@@ -13,7 +13,7 @@ function Testimonials() {
           {testimonials.map((t) => (
             <li key={t.id} className="flex flex-col rounded-2xl bg-teal-800/60 p-6 ring-1 ring-teal-700">
               <Quote className="size-8 text-coral-400" aria-hidden="true" />
-              <div className="mt-3 flex gap-0.5" aria-label={`${t.rating} out of 5 stars`}>
+              <div className="mt-3 flex gap-0.5" role="img" aria-label={`${t.rating} out of 5 stars`}>
                 {Array.from({ length: 5 }, (_, i) => (
                   <Star
                     key={i}

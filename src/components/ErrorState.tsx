@@ -25,14 +25,14 @@ function ErrorState({ message, onRetry }: ErrorStateProps) {
       className="flex flex-col items-center rounded-2xl bg-white px-6 py-14 text-center shadow-md shadow-teal-950/5"
     >
       <div className="rounded-full bg-coral-400/15 p-4">
-        <TriangleAlert className="size-8 text-coral-600" aria-hidden="true" />
+        <TriangleAlert className="size-8 text-coral-700" aria-hidden="true" />
       </div>
       <h2 className="mt-4 text-xl font-bold text-teal-900">Something went wrong</h2>
       <p className="mt-2 max-w-md text-teal-900/70">{message}</p>
       <button
         type="button"
         onClick={handleRetry}
-        className="mt-6 inline-flex items-center gap-2 rounded-full bg-coral-500 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-coral-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral-500"
+        className="mt-6 inline-flex items-center gap-2 rounded-full bg-coral-500 px-6 py-2.5 text-sm font-semibold text-teal-950 transition-colors hover:bg-coral-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral-500"
       >
         <RotateCcw className="size-4" aria-hidden="true" />
         Try again

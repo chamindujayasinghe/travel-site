@@ -6,8 +6,8 @@ function Footer() {
 
   return (
     <footer className="bg-teal-900 text-sand-100">
-      <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 py-10 sm:px-6 md:flex-row md:items-start md:justify-between lg:px-8">
-        <div className="max-w-sm">
+      <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 py-10 sm:px-6 md:flex-row md:items-start md:gap-16 lg:px-8">
+        <div className="max-w-sm md:mr-auto">
           <Link to="/" className="flex items-center gap-2 text-white">
             <Compass className="size-6 text-coral-400" aria-hidden="true" />
             <span className="text-lg font-bold">Ceylon Trails</span>
@@ -25,6 +25,18 @@ function Footer() {
             </li>
             <li>
               <Link to="/destinations" className="hover:text-white hover:underline">All destinations</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Company">
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-coral-400">Company</h2>
+          <ul className="mt-3 space-y-2 text-sm">
+            <li>
+              <Link to="/about" className="hover:text-white hover:underline">About us</Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-white hover:underline">Contact</Link>
             </li>
           </ul>
         </nav>

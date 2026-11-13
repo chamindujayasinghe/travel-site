@@ -12,7 +12,7 @@ function CategoryGrid() {
   return (
     <section className="bg-sand-100 py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p className="text-sm font-semibold tracking-widest text-coral-600 uppercase">Travel styles</p>
+        <p className="text-sm font-semibold tracking-widest text-coral-700 uppercase">Travel styles</p>
         <h2 className="mt-2 text-3xl font-bold text-teal-900 sm:text-4xl">Browse by travel style</h2>
         <p className="mt-3 max-w-2xl text-teal-900/70">
           Whether you want history, hills, wildlife or waves — pick a style and we’ll show you where to go.

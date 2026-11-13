@@ -46,7 +46,7 @@ function DestinationCard({ destination, showDescription = false }: DestinationCa
 
         <p className="mt-auto pt-2 text-sm text-teal-900/70">
           {days} days · from{' '}
-          <span className="text-lg font-bold text-coral-600">{formatPrice(price)}</span> / person
+          <span className="text-lg font-bold text-coral-700">{formatPrice(price)}</span> / person
         </p>
       </div>
     </Link>

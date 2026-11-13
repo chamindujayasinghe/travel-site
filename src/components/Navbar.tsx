@@ -5,11 +5,13 @@ import { Link, NavLink, useLocation } from 'react-router'
 const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/destinations', label: 'Explore' },
+  { to: '/about', label: 'About' },
+  { to: '/contact', label: 'Contact' },
 ]
 
 function navLinkClass({ isActive }: { isActive: boolean }) {
   return `rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-    isActive ? 'bg-coral-500 text-white' : 'text-teal-900 hover:bg-sand-200'
+    isActive ? 'bg-coral-500 text-teal-950' : 'text-teal-900 hover:bg-sand-200'
   }`
 }
 

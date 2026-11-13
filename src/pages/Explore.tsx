@@ -49,6 +49,7 @@ function Explore() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+      <title>Explore destinations · Ceylon Trails</title>
       <header className="max-w-2xl">
         <h1 className="text-3xl font-bold text-teal-900 sm:text-4xl">Explore destinations</h1>
         <p className="mt-3 text-teal-900/70">

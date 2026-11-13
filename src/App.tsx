@@ -1,5 +1,7 @@
 import { Route, Routes } from 'react-router'
 import Layout from './components/Layout'
+import About from './pages/About'
+import Contact from './pages/Contact'
 import DestinationDetails from './pages/DestinationDetails'
 import Explore from './pages/Explore'
 import Home from './pages/Home'
@@ -12,6 +14,8 @@ function App() {
         <Route index element={<Home />} />
         <Route path="destinations" element={<Explore />} />
         <Route path="destinations/:id" element={<DestinationDetails />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

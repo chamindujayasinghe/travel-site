@@ -18,14 +18,21 @@ function DestinationDetails() {
   // useCallback keeps the request stable, so it only re-runs when the id changes
   const request = useCallback(() => getDestinationById(id), [id])
   const { data: destination, loading, error, retry } = useAsync(request)
+  const notFound = !loading && !error && !destination
+
+  let pageTitle = 'Ceylon Trails'
+  if (destination) pageTitle = `${destination.name} · Ceylon Trails`
+  else if (notFound) pageTitle = 'Destination not found · Ceylon Trails'
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
+      <title>{pageTitle}</title>
+
       {loading && <DetailsSkeleton />}
 
       {error && <ErrorState message={error.message} onRetry={retry} />}
 
-      {!loading && !error && !destination && (
+      {notFound && (
         <EmptyState
           title="Destination not found"
           message="We couldn’t find that destination. It may have been removed or the link is incorrect."
@@ -38,7 +45,7 @@ function DestinationDetails() {
         <>
           <Link
             to="/destinations"
-            className="inline-flex items-center gap-1 text-sm font-semibold text-teal-700 hover:text-coral-600"
+            className="inline-flex items-center gap-1 text-sm font-semibold text-teal-700 hover:text-coral-700"
           >
             <ArrowLeft className="size-4" aria-hidden="true" /> Back to destinations
           </Link>
@@ -88,7 +95,7 @@ function DestinationDetails() {
                   {destination.activities.map((activity) => (
                     <li key={activity.name} className="rounded-2xl bg-white p-4 shadow-md shadow-teal-950/5">
                       <p className="font-semibold text-teal-900">{activity.name}</p>
-                      <p className="mt-1 flex items-center gap-1 text-sm text-teal-900/60">
+                      <p className="mt-1 flex items-center gap-1 text-sm text-teal-900/70">
                         <Clock className="size-4" aria-hidden="true" /> {activity.duration}
                       </p>
                     </li>

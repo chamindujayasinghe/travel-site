@@ -96,7 +96,7 @@ function BookingForm({ destination }: BookingFormProps) {
   return (
     <form onSubmit={handleSubmit} noValidate>
       <p className="text-sm text-teal-900/70">
-        from <span className="text-2xl font-bold text-coral-600">{formatPrice(destination.price)}</span> / person ·{' '}
+        from <span className="text-2xl font-bold text-coral-700">{formatPrice(destination.price)}</span> / person ·{' '}
         {destination.days} days
       </p>
       <h2 className="mt-1 text-lg font-bold text-teal-900">Book this trip</h2>
@@ -187,7 +187,7 @@ function BookingForm({ destination }: BookingFormProps) {
             >
               <Plus className="size-4" />
             </button>
-            <span className="text-sm text-teal-900/60">max {MAX_TRAVELLERS}</span>
+            <span className="text-sm text-teal-900/70">max {MAX_TRAVELLERS}</span>
           </div>
         </div>
       </div>
@@ -202,11 +202,11 @@ function BookingForm({ destination }: BookingFormProps) {
       <button
         type="submit"
         disabled={submitting}
-        className="mt-4 w-full rounded-xl bg-coral-500 py-3 font-semibold text-white transition-colors hover:bg-coral-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral-500 disabled:cursor-wait disabled:opacity-70"
+        className="mt-4 w-full rounded-xl bg-coral-500 py-3 font-semibold text-teal-950 transition-colors hover:bg-coral-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral-500 disabled:cursor-wait disabled:opacity-70"
       >
         {submitting ? 'Booking…' : 'Book now'}
       </button>
-      <p className="mt-2 text-center text-xs text-teal-900/60">Free cancellation up to 7 days before your trip</p>
+      <p className="mt-2 text-center text-xs text-teal-900/70">Free cancellation up to 7 days before your trip</p>
     </form>
   )
 }
